@@ -1,1 +1,95 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@charset "UTF-8";
+/* Color */
+.explore_btn {
+  background-color: #FF79DA;
+}
+
+/* Fonts */
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.header_logo .explore_title {
+  font-family: "Shrikhand", cursive;
+}
+
+/* Eléments principaux de la page */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Header */
+.header_logo {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  max-width: 100%;
+}
+
+/* Search */
+.search_text {
+  width: 100%;
+  border-left: none;
+  border-right: none;
+  border-top: 1px solid #F2F2F2;
+  border-bottom: 1px solid #F2F2F2;
+  background-color: #d6d5d5;
+}
+
+/* Explore */
+.explore_title {
+  text-align: center;
+}
+
+.explore_btn {
+  display: block;
+  margin: auto;
+  border-radius: 1rem 1rem 1rem 1rem;
+}
+
+/* Fonctionnement */
+.fonctionnement_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 2rem;
+  border: 2px solid #d9d9d9;
+  -webkit-box-shadow: 0 0 16px #0000002e;
+          box-shadow: 0 0 16px #0000002e;
+  height: 3rem;
+  border-radius: 2rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.fonctionnement_box:hover {
+  background-color: #e2e2e2;
+}
+
+.fonctionnement_text {
+  font-weight: bold;
+}
+
+.fonctionnement_icon {
+  color: gray;
+}
+
+.circle {
+  width: 30px;
+  background: #9356DC;
+  color: white;
+  line-height: 2px;
+  height: 30px;
+  text-align: center;
+  border-radius: 100px;
+}
+
+/* Restaurants */
+/*# sourceMappingURL=style.css.map */
