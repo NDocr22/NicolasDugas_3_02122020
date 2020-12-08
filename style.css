@@ -1,9 +1,5 @@
 @charset "UTF-8";
 /* Color */
-.explore_btn {
-  background-color: #FF79DA;
-}
-
 /* Fonts */
 body {
   font-family: "Roboto", sans-serif;
@@ -33,14 +29,23 @@ a {
 /* Search */
 .search_text {
   width: 100%;
+  height: 2.5rem;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  color: #000000;
   border-left: none;
   border-right: none;
   border-top: 1px solid #F2F2F2;
   border-bottom: 1px solid #F2F2F2;
-  background-color: #d6d5d5;
+  background-color: #e9e9e9;
 }
 
 /* Explore */
+.explore {
+  background-color: #e7e6e62e;
+}
+
 .explore_title {
   text-align: center;
 }
@@ -48,10 +53,29 @@ a {
 .explore_btn {
   display: block;
   margin: auto;
-  border-radius: 1rem 1rem 1rem 1rem;
+  border-radius: 1.5rem 1.5rem;
+  height: 2.5rem;
+  width: 13rem;
+  background: -webkit-gradient(linear, right top, left top, from(#9356DC), to(#FF79DA));
+  background: linear-gradient(to left, #9356DC, #FF79DA);
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+}
+
+.explore_btn:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+.text_btn {
+  color: white;
 }
 
 /* Fonctionnement */
+.contenair {
+  margin: 1rem;
+}
+
 .fonctionnement_box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -63,7 +87,8 @@ a {
   border: 2px solid #d9d9d9;
   -webkit-box-shadow: 0 0 16px #0000002e;
           box-shadow: 0 0 16px #0000002e;
-  height: 3rem;
+  height: 4rem;
+  margin: 0.5rem;
   border-radius: 2rem;
   margin-bottom: 1rem;
   cursor: pointer;
@@ -75,13 +100,17 @@ a {
 
 .fonctionnement_text {
   font-weight: bold;
+  margin: 0 3rem;
 }
 
 .fonctionnement_icon {
   color: gray;
+  margin: 0 1rem;
 }
 
 .circle {
+  position: relative;
+  left: -12px;
   width: 30px;
   background: #9356DC;
   color: white;
