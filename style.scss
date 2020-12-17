@@ -104,6 +104,7 @@ a {
     box-shadow: 0 0 16px #0000002e;
     height: 4rem;
     margin: 0.5rem;
+    margin-top: 2rem;
     border-radius: 2rem;
     margin-bottom: 1rem;
     cursor: pointer;
@@ -137,12 +138,18 @@ a {
 
 /* Restaurants */
 
+.restaurants {
+    padding: 1rem;
+    margin-top: 5rem;
+}
+
 .restaurants_content:hover {
     transform: scale(1.02);
 }
 
 .restaurants_title {
     font-family: $font-title;
+    margin: 1rem;
 }
 
 .restaurants_content {
@@ -160,11 +167,11 @@ a {
 }
 
 .card_title {
-    margin: 1.2rem 1.5rem;
+    margin: 1.2rem;
 }
 
 .card_desc {
-    margin: 1.2rem 1.5rem;
+    margin: 1.2rem;
 }
 
 /* Footer */
@@ -195,19 +202,35 @@ a {
 
 /* Menu */
 
+.arrow {
+    margin: 1rem;
+    position: relative;
+    top: 26px;
+}
+
 .card_img {
     padding-top: 1rem;
-    height: 20rem;
+    height: 18rem;
     width: 100%;
+}
+
+.menu_contenair {
+    background-color: white;
+    border-radius: 1rem 1rem 0 0;
+    position: relative;
+    top: -5rem;
 }
 
 .menu_title {
     font-family: $font-title;
     margin: 1rem;
+    padding-top: 2rem;
 }
 
 .menu_heart {
-    float: right;
+    position: relative;
+    top: -3rem;
+    left: 260px;
     
 }
 
@@ -243,4 +266,12 @@ a {
 .price {
     float: right;
 }
+
+.btn_menu {
+    margin-top: 3rem;
+}
+
+/* Loading page d'accueil */
+
+
 
