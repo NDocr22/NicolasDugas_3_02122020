@@ -276,4 +276,29 @@ a {
 }
 
 /* Loading page d'accueil */
+/* Animations chargement des menus */
+.title_desc, .menu_desc1, .menu_desc2, .menu_desc3, .menu_desc4 .desc_title, .desc_content, .price {
+  -webkit-animation: fadein 2s;
+          animation: fadein 2s;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Animations des menus au survol */
 /*# sourceMappingURL=style.css.map */
