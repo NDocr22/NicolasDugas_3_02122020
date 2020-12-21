@@ -134,16 +134,6 @@ a {
 }
 
 /* Restaurants */
-.restaurants {
-  padding: 1rem;
-  margin-top: 5rem;
-}
-
-.restaurants_content:hover {
-  -webkit-transform: scale(1.02);
-          transform: scale(1.02);
-}
-
 .restaurants_title {
   font-family: "Shrikhand", cursive;
   margin: 1rem;
@@ -163,11 +153,26 @@ a {
           flex-direction: column;
 }
 
+.restaurants_content:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
 .restaurants_img {
-  height: 100%;
+  position: relative;
+  background-size: cover;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  height: 250px;
+}
+
+.new_text {
+  position: absolute;
+  left: 380px;
+  color: #175e2e;
+  background-color: #99E2D0;
+  padding: 7px;
+  border-radius: 0.2rem 0.2rem;
+  font-weight: bold;
 }
 
 .card_title {
@@ -175,7 +180,16 @@ a {
 }
 
 .card_desc {
+  position: relative;
+  top: -1rem;
   margin: 1.2rem;
+  line-height: 0;
+}
+
+.card_heart {
+  position: relative;
+  top: -4rem;
+  left: 25rem;
 }
 
 /* Footer */
