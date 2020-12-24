@@ -134,6 +134,10 @@ a {
 }
 
 /* Restaurants */
+.restaurants {
+  padding-top: 5rem;
+}
+
 .restaurants_title {
   font-family: "Shrikhand", cursive;
   margin: 1rem;
@@ -151,6 +155,8 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-bottom: 20px;
+  height: 330px;
 }
 
 .restaurants_content:hover {
@@ -163,6 +169,14 @@ a {
   background-size: cover;
   width: 100%;
   height: 250px;
+}
+
+.restaurants_fig img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 235px;
+  -o-object-position: 40% 60%;
+     object-position: 40% 60%;
 }
 
 .new_text {
@@ -188,8 +202,27 @@ a {
 
 .card_heart {
   position: relative;
-  top: -4rem;
+  top: -4.5rem;
   left: 25rem;
+  background-color: white;
+}
+
+.heart_icon {
+  font-size: 1.5em;
+}
+
+.heart_icon2 {
+  position: absolute;
+  left: 0rem;
+  font-size: 1.5em;
+  opacity: 0;
+}
+
+.heart_icon2:hover {
+  -webkit-transition: all 0.3s linear 0s;
+  transition: all 0.3s linear 0s;
+  color: #9356DC;
+  opacity: 1;
 }
 
 /* Footer */
@@ -198,6 +231,10 @@ a {
   width: 100%;
   height: 15rem;
   color: white;
+}
+
+.footer_bloc {
+  margin-top: 5rem;
 }
 
 .link {
@@ -248,7 +285,7 @@ a {
 .menu_heart {
   position: relative;
   top: -3rem;
-  left: 260px;
+  left: 420px;
 }
 
 .title_desc {
@@ -427,4 +464,52 @@ a {
 }
 
 /* Animations des menus au survol */
+.anim_menu {
+  position: relative;
+  top: -50px;
+  left: 395px;
+  opacity: 0;
+}
+
+.anim_menu:hover {
+  opacity: 1;
+  background: #99E2D0;
+  padding: 0.9rem;
+}
+
+@-webkit-keyframes rotation {
+  from {
+    z-index: 1;
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  to {
+    z-index: 1;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotation {
+  from {
+    z-index: 1;
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  to {
+    z-index: 1;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+/* Animations des 3 points */
 /*# sourceMappingURL=style.css.map */
