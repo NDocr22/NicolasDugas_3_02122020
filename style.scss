@@ -280,10 +280,23 @@ a {
 }
 
 .menu_heart {
-    position: relative;
-    top: -3rem;
+    position: absolute;
+    top: 40px;
     left: 420px;
-    
+    font-size: 1.5em;
+}
+
+.heart_icon3 {
+    position: absolute;
+    top: 2px;
+    right: 0px;
+    opacity: 0;
+}
+
+.heart_icon3:hover {
+    opacity: 1;
+    transition: all 0.3s linear 0s;
+    color: $primary-color;
 }
 
 .title_desc {
@@ -437,33 +450,117 @@ a {
 
 /* Animations des menus au survol */
 
+.anim_background {
+    background: $tertiaire-color;
+    position: absolute;
+    top: 120px;
+    left: 382px;
+    height: 6.6%;
+    width: 15%;
+    border-radius: 0 1rem 1rem 0;
+    display: none;
+}
+
+.menu_desc1:hover .anim_background {
+    display: block;
+    animation: translate-x 4s linear;
+}
 
 .anim_menu {
+    color: #ffffff;
     position: relative;
-    top: -50px;
-    left: 395px;
+    top: 16px;
+    left: 0;
     opacity: 0;
 }
-.anim_menu:hover {
+
+.menu_desc1:hover .anim_menu {
     opacity: 1;
-    background: $tertiaire-color;
-    padding: 0.9rem;
+    animation: rotate-center 0.6s linear both;
+    transform-origin: 50% 50%;
+    display: flex;
+    justify-content: center;
 }
 
-@keyframes rotation {
+
+@keyframes rotate-center {
     from {
         z-index:1;
         transform: rotate(0);
-    } 50% {
+    } 
+    50% {
         transform: rotate(180deg);
-    } to {
+    } 
+    to {
       z-index:1;
         transform: rotate(360deg);
     }
+  }
+
+@keyframes translate-x {
+    0% {
+        transform: translateX(0px)
+    }
+    20% {
+        transform: translateX(-20px);
+    }
+    
 }
 
 /* Animations des 3 points */
 
+/* Media queries */
+
+@media screen and (min-width: 768px) {
+
+.main {
+    max-width: 100%;
+}
+
+.fonctionnement_title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.contenair_box {
+    display: flex;
+    max-width: 100%;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.restaurants_box {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 1em;
+}
+
+.restaurants_title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+
+.new_text {
+    opacity: 0;
+}
+
+.menu_content {
+    width: 50%;
+    display: grid;
+    grid-template-columns: 2fr;
+}
 
 
 
+
+
+
+
+
+
+}
