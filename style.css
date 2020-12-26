@@ -492,8 +492,8 @@ a {
 
 .menu_desc1:hover .anim_background {
   display: block;
-  -webkit-animation: translate-x 4s linear;
-          animation: translate-x 4s linear;
+  -webkit-animation: scale-up-hor-right 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+          animation: scale-up-hor-right 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 
 .anim_menu {
@@ -506,8 +506,8 @@ a {
 
 .menu_desc1:hover .anim_menu {
   opacity: 1;
-  -webkit-animation: rotate-center 0.6s linear both;
-          animation: rotate-center 0.6s linear both;
+  -webkit-animation: rotate-center 0.4s linear both;
+          animation: rotate-center 0.4s linear both;
   -webkit-transform-origin: 50% 50%;
           transform-origin: 50% 50%;
   display: -webkit-box;
@@ -516,6 +516,11 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.menu_desc1:hover .price {
+  -webkit-animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+          animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 @-webkit-keyframes rotate-center {
@@ -552,25 +557,55 @@ a {
   }
 }
 
-@-webkit-keyframes translate-x {
+@-webkit-keyframes scale-up-hor-right {
   0% {
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
+    -webkit-transform: scaleX(0.4);
+            transform: scaleX(0.4);
+    -webkit-transform-origin: 100% 100%;
+            transform-origin: 100% 100%;
   }
-  20% {
-    -webkit-transform: translateX(-20px);
-            transform: translateX(-20px);
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-transform-origin: 100% 100%;
+            transform-origin: 100% 100%;
   }
 }
 
-@keyframes translate-x {
+@keyframes scale-up-hor-right {
   0% {
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
+    -webkit-transform: scaleX(0.4);
+            transform: scaleX(0.4);
+    -webkit-transform-origin: 100% 100%;
+            transform-origin: 100% 100%;
   }
-  20% {
-    -webkit-transform: translateX(-20px);
-            transform: translateX(-20px);
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-transform-origin: 100% 100%;
+            transform-origin: 100% 100%;
+  }
+}
+
+@-webkit-keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-70px);
+            transform: translateX(-70px);
+  }
+}
+
+@keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-70px);
+            transform: translateX(-70px);
   }
 }
 
