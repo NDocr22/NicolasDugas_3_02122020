@@ -310,7 +310,7 @@ a {
     border-radius: 1rem 1rem 0 0;
 }
 
-.menu_desc1, .menu_desc2, .menu_desc3, .menu_desc4 {
+.menu_desc1, .menu_desc2, .menu_desc3, .menu_desc4, .menu_desc5, .menu_desc6, .menu_desc7, .menu_desc8, .menu_desc9, .menu_desc10 {
     background-color: white;
     box-shadow: 0 0 16px #0000002e;
     border-radius: 1rem 1rem 1rem 1rem;
@@ -319,7 +319,7 @@ a {
     line-height: 1rem;
 }
 
-.menu_desc1, .menu_desc2, .menu_desc3:hover {
+.menu_desc1, .menu_desc2, .menu_desc3, .menu_desc4, .menu_desc5, .menu_desc6, .menu_desc7, .menu_desc8, .menu_desc9, .menu_desc10:hover {
     cursor: pointer;
 }
 
@@ -435,7 +435,7 @@ a {
 
 /* Animations chargement des menus */
 
-.title_desc, .menu_desc1, .menu_desc2, .menu_desc3, .menu_desc4 .desc_title, .desc_content, .price {
+.title_desc, .menu_desc1, .menu_desc2, .menu_desc3, .menu_desc4, .menu_desc5, .menu_desc6, .menu_desc7, .menu_desc8, .menu_desc9, .menu_desc10, .desc_title, .desc_content, .price {
     animation: fadein 2s;
 }
     
@@ -461,7 +461,106 @@ a {
     display: none;
 }
 
-.menu_desc1:hover .anim_background {
+.anim_background2 {
+    background: $tertiaire-color;
+    position: absolute;
+    top: 200px;
+    left: 382px;
+    height: 6.6%;
+    width: 15%;
+    border-radius: 0 1rem 1rem 0;
+    display: none;
+}
+
+.anim_background3 {
+    background: $tertiaire-color;
+    position: absolute;
+    top: 280px;
+    left: 382px;
+    height: 6.6%;
+    width: 15%;
+    border-radius: 0 1rem 1rem 0;
+    display: none;
+}
+
+.anim_background4 {
+    background: $tertiaire-color;
+    position: absolute;
+    top: 398px;
+    left: 382px;
+    height: 6.6%;
+    width: 15%;
+    border-radius: 0 1rem 1rem 0;
+    display: none;
+}
+
+.anim_background5 {
+    background: $tertiaire-color;
+    position: absolute;
+    top: 479px;
+    left: 382px;
+    height: 6.6%;
+    width: 15%;
+    border-radius: 0 1rem 1rem 0;
+    display: none;
+}
+
+.anim_background6 {
+    background: $tertiaire-color;
+    position: absolute;
+    top: 559px;
+    left: 382px;
+    height: 6.6%;
+    width: 15%;
+    border-radius: 0 1rem 1rem 0;
+    display: none;
+}
+
+.anim_background7 {
+    background: $tertiaire-color;
+    position: absolute;
+    top: 677px;
+    left: 382px;
+    height: 6.6%;
+    width: 15%;
+    border-radius: 0 1rem 1rem 0;
+    display: none;
+}
+
+.anim_background8 {
+    background: $tertiaire-color;
+    position: absolute;
+    top: 757px;
+    left: 382px;
+    height: 6.6%;
+    width: 15%;
+    border-radius: 0 1rem 1rem 0;
+    display: none;
+}
+
+.anim_background9 {
+    background: $tertiaire-color;
+    position: absolute;
+    top: 837px;
+    left: 382px;
+    height: 6.6%;
+    width: 15%;
+    border-radius: 0 1rem 1rem 0;
+    display: none;
+}
+
+.anim_background10 {
+    background: $tertiaire-color;
+    position: absolute;
+    top: 917px;
+    left: 382px;
+    height: 6.6%;
+    width: 15%;
+    border-radius: 0 1rem 1rem 0;
+    display: none;
+}
+
+.menu_desc1:hover .anim_background, .menu_desc2:hover .anim_background2, .menu_desc3:hover .anim_background3, .menu_desc4:hover .anim_background4, .menu_desc5:hover .anim_background5, .menu_desc6:hover .anim_background6, .menu_desc7:hover .anim_background7, .menu_desc8:hover .anim_background8, .menu_desc9:hover .anim_background9, .menu_desc10:hover .anim_background10 {
     display: block;
     animation: scale-up-hor-right 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
@@ -474,7 +573,79 @@ a {
     opacity: 0;
 }
 
-.menu_desc1:hover .anim_menu {
+.anim_menu2 {
+    color: #ffffff;
+    position: relative;
+    top: 16px;
+    left: 0;
+    opacity: 0;
+}
+
+.anim_menu3 {
+    color: #ffffff;
+    position: relative;
+    top: 16px;
+    left: 0;
+    opacity: 0;
+}
+
+.anim_menu4 {
+    color: #ffffff;
+    position: relative;
+    top: 16px;
+    left: 0;
+    opacity: 0;
+}
+
+.anim_menu5 {
+    color: #ffffff;
+    position: relative;
+    top: 16px;
+    left: 0;
+    opacity: 0;
+}
+
+.anim_menu6 {
+    color: #ffffff;
+    position: relative;
+    top: 16px;
+    left: 0;
+    opacity: 0;
+}
+
+.anim_menu7 {
+    color: #ffffff;
+    position: relative;
+    top: 16px;
+    left: 0;
+    opacity: 0;
+}
+
+.anim_menu8 {
+    color: #ffffff;
+    position: relative;
+    top: 16px;
+    left: 0;
+    opacity: 0;
+}
+
+.anim_menu9 {
+    color: #ffffff;
+    position: relative;
+    top: 16px;
+    left: 0;
+    opacity: 0;
+}
+
+.anim_menu10 {
+    color: #ffffff;
+    position: relative;
+    top: 16px;
+    left: 0;
+    opacity: 0;
+}
+
+.menu_desc1:hover .anim_menu, .menu_desc2:hover .anim_menu2, .menu_desc3:hover .anim_menu3, .menu_desc4:hover .anim_menu4, .menu_desc5:hover .anim_menu5, .menu_desc6:hover .anim_menu6, .menu_desc7:hover .anim_menu7, .menu_desc8:hover .anim_menu8, .menu_desc9:hover .anim_menu9, .menu_desc10:hover .anim_menu10 {
     opacity: 1;
     animation: rotate-center 0.4s linear both;
     transform-origin: 50% 50%;
@@ -482,7 +653,7 @@ a {
     justify-content: center;
 }
 
-.menu_desc1:hover .price {
+.menu_desc1:hover .price, .menu_desc2:hover .price, .menu_desc3:hover .price, .menu_desc4:hover .price, .menu_desc5:hover .price, .menu_desc6:hover .price, .menu_desc7:hover .price, .menu_desc8:hover .price, .menu_desc9:hover .price, .menu_desc10:hover .price {
     animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
