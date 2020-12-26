@@ -631,11 +631,31 @@ a {
     opacity: 0;
   }
   .menu_content {
-    width: 50%;
+    max-width: 100%;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 2fr;
-        grid-template-columns: 2fr;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+  .menu_img {
+    width: 40%;
+    height: auto;
+    position: relative;
+    left: 550px;
+  }
+  .btn_menu {
+    position: relative;
+    top: 850px;
+    right: 650px;
+  }
+  .menu_title {
+    position: relative;
+    top: -180px;
+    left: 100px;
+  }
+  .menu_heart {
+    position: absolute;
+    top: -130px;
   }
 }
 /*# sourceMappingURL=style.css.map */

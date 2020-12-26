@@ -550,10 +550,36 @@ a {
 }
 
 .menu_content {
-    width: 50%;
+    max-width: 100%;
     display: grid;
-    grid-template-columns: 2fr;
+    grid-template-columns: repeat(3, 1fr);
 }
+
+.menu_img {
+    width: 40%;
+    height: auto;
+    position: relative;
+    left: 550px;
+}
+
+.btn_menu {
+    position: relative;
+    top: 850px;
+    right: 650px;
+}
+
+.menu_title {
+    position: relative;
+    top: -180px;
+    left: 100px;
+}
+
+.menu_heart {
+    position: absolute;
+    top: -130px;
+}
+
+
 
 
 
