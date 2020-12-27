@@ -79,6 +79,7 @@ a {
 
 .explore_btn:hover {
     transform: scale(1.02);
+    animation: shadow-drop-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 .text_btn {
@@ -691,7 +692,16 @@ a {
     }
   }
 
-/* Animations des 3 points */
+/* Animations shadow btn */
+
+@keyframes shadow-drop-center {
+    0% {
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+      box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+    }
+  }
 
 /* Media queries */
 
@@ -762,4 +772,16 @@ a {
     position: absolute;
     top: -130px;
 }
+
+.location_icon {
+    position: relative;
+    left: 850px;
+}
+
+.card_heart {
+    position: relative;
+    left: 800px;
+    
+}
+
 }
